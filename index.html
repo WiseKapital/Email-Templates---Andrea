@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email Templates - Andrea</title>
+    <title>Email Templates - Andrea: Campaign Performance Overview (%)</title>
     <!-- Google Fonts & Tailwind CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +22,7 @@
                         sans: ['Inter', 'sans-serif'],
                     },
                     colors: {
-                        primary: '#2563EB',
+                        primary: '#4F46E5',
                     }
                 }
             }
@@ -37,17 +37,17 @@
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center space-x-3">
                     <div class="w-10 h-10 rounded-xl bg-indigo-600 flex items-center justify-center text-white shadow-sm shadow-indigo-200">
-                        <i class="ph ph-chart-donut text-2xl"></i>
+                        <i class="ph ph-envelope-simple-open text-2xl"></i>
                     </div>
                     <div>
-                        <h1 class="text-xl font-bold text-slate-900 leading-none">Email Templates</h1>
-                        <span class="text-xs font-semibold text-indigo-600 tracking-wide uppercase">Dashboard · Andrea</span>
+                        <h1 class="text-lg sm:text-xl font-bold text-slate-900 leading-none">Email Templates - Andrea</h1>
+                        <span class="text-xs font-semibold text-indigo-600 tracking-wide uppercase">Campaign Performance Overview (%)</span>
                     </div>
                 </div>
 
                 <div class="flex items-center space-x-3">
                     <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-indigo-50 text-indigo-700 border border-indigo-200">
-                        <span class="w-2 h-2 rounded-full bg-indigo-500 animate-pulse"></span> Performance Overview
+                        <span class="w-2 h-2 rounded-full bg-indigo-500 animate-pulse"></span> 10 Campaigns · 7 Brands
                     </span>
                     <button onclick="window.print()" class="px-3.5 py-1.5 text-xs font-medium text-slate-700 bg-white hover:bg-slate-50 border border-slate-200 rounded-lg shadow-sm flex items-center gap-2 transition">
                         <i class="ph ph-printer text-base"></i> Export / Print
@@ -60,10 +60,10 @@
     <!-- Main Content -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
 
-        <!-- KPI Highlight Cards (Espaciado uniforme y compacto) -->
+        <!-- KPI Highlight Cards (Compactos y limpios) -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-8">
             
-            <!-- Top Open Rate -->
+            <!-- Card 1: Top Open Rate -->
             <div class="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm flex flex-col">
                 <div class="flex items-center justify-between mb-3">
                     <span class="text-xs font-semibold uppercase tracking-wider text-slate-500">Top Open Rate</span>
@@ -75,10 +75,10 @@
                     <span class="text-3xl font-extrabold text-slate-900">78.3%</span>
                     <span class="text-xs font-medium text-amber-700 bg-amber-100 px-2 py-0.5 rounded-full">Wow Vegas</span>
                 </div>
-                <p class="text-xs text-slate-500 mt-1.5 truncate"></p>
+                <p class="text-xs text-slate-500 mt-1.5 truncate">Subject: Action Required: Verify Your...</p>
             </div>
 
-            <!-- Top CTOR -->
+            <!-- Card 2: Top CTOR -->
             <div class="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm flex flex-col">
                 <div class="flex items-center justify-between mb-3">
                     <span class="text-xs font-semibold uppercase tracking-wider text-slate-500">Top CTOR (Click-to-Open)</span>
@@ -93,7 +93,7 @@
                 <p class="text-xs text-slate-500 mt-1.5 truncate">Unique Opens: 78 · Clicks: 38</p>
             </div>
 
-            <!-- Total Registrations -->
+            <!-- Card 3: Total Registrations -->
             <div class="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm flex flex-col">
                 <div class="flex items-center justify-between mb-3">
                     <span class="text-xs font-semibold uppercase tracking-wider text-slate-500">Total Registrations</span>
@@ -103,12 +103,12 @@
                 </div>
                 <div class="flex items-baseline gap-2">
                     <span class="text-3xl font-extrabold text-slate-900">78</span>
-                    <span class="text-xs font-medium text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full">Peak: 18 (Lavish Luck)</span>
+                    <span class="text-xs font-medium text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full">Lavish Luck: 36 sum</span>
                 </div>
-                <p class="text-xs text-slate-500 mt-1.5 truncate">Across 9 Active Converting Campaigns</p>
+                <p class="text-xs text-slate-500 mt-1.5 truncate">Total Sent: 53,521 emails</p>
             </div>
 
-            <!-- Total Users (CPA) -->
+            <!-- Card 4: Total CPA Users -->
             <div class="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm flex flex-col">
                 <div class="flex items-center justify-between mb-3">
                     <span class="text-xs font-semibold uppercase tracking-wider text-slate-500">Total Users (CPA)</span>
@@ -118,16 +118,16 @@
                 </div>
                 <div class="flex items-baseline gap-2">
                     <span class="text-3xl font-extrabold text-slate-900">6</span>
-                    <span class="text-xs font-medium text-purple-700 bg-purple-100 px-2 py-0.5 rounded-full">10 Campaigns</span>
+                    <span class="text-xs font-medium text-purple-700 bg-purple-100 px-2 py-0.5 rounded-full">MegaSpinz: 2 Users</span>
                 </div>
                 <p class="text-xs text-slate-500 mt-1.5 truncate">
-                    <span class="font-semibold text-slate-600">Total Sent:</span> 53,521 emails
+                    <span class="font-semibold text-slate-600">Delivered:</span> 53,413 (99.8%)
                 </p>
             </div>
 
         </div>
 
-        <!-- 3 INDEPENDENT CHARTS -->
+        <!-- 3 INDEPENDENT CHARTS: ALL 7 BRANDS INCLUDED & AGGREGATED -->
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
             
             <!-- Graph 1: Open Rate (%) -->
@@ -136,13 +136,13 @@
                     <div>
                         <div class="flex items-center gap-1.5">
                             <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
-                            <h2 class="text-xs font-bold text-slate-900 uppercase tracking-wide">Top Open Rates (%)</h2>
+                            <h2 class="text-xs font-bold text-slate-900 uppercase tracking-wide">Open Rate by Brand (%)</h2>
                         </div>
-                        <p class="text-[11px] text-slate-500 mt-0.5">Highest opening campaigns</p>
+                        <p class="text-[11px] text-slate-500 mt-0.5">All 7 brands (Aggregated)</p>
                     </div>
                     <span class="text-[11px] bg-amber-50 text-amber-700 border border-amber-200 px-2 py-0.5 rounded font-semibold">Open %</span>
                 </div>
-                <div class="h-56">
+                <div class="h-60">
                     <canvas id="openRateChart"></canvas>
                 </div>
             </div>
@@ -153,30 +153,30 @@
                     <div>
                         <div class="flex items-center gap-1.5">
                             <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
-                            <h2 class="text-xs font-bold text-slate-900 uppercase tracking-wide">Top CTOR (%)</h2>
+                            <h2 class="text-xs font-bold text-slate-900 uppercase tracking-wide">CTOR by Brand (%)</h2>
                         </div>
-                        <p class="text-[11px] text-slate-500 mt-0.5">Click-to-Open engagement</p>
+                        <p class="text-[11px] text-slate-500 mt-0.5">All 7 brands (Click-to-Open)</p>
                     </div>
                     <span class="text-[11px] bg-blue-50 text-blue-700 border border-blue-200 px-2 py-0.5 rounded font-semibold">CTOR %</span>
                 </div>
-                <div class="h-56">
+                <div class="h-60">
                     <canvas id="ctorChart"></canvas>
                 </div>
             </div>
 
-            <!-- Graph 3: Registrations by Campaign -->
+            <!-- Graph 3: Registrations (Summed) -->
             <div class="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm flex flex-col justify-between">
                 <div class="flex justify-between items-center mb-3">
                     <div>
                         <div class="flex items-center gap-1.5">
                             <span class="w-2.5 h-2.5 rounded-full bg-emerald-600"></span>
-                            <h2 class="text-xs font-bold text-slate-900 uppercase tracking-wide">Top Registrations</h2>
+                            <h2 class="text-xs font-bold text-slate-900 uppercase tracking-wide">Total Registrations (Sum)</h2>
                         </div>
-                        <p class="text-[11px] text-slate-500 mt-0.5">Volume of registrations</p>
+                        <p class="text-[11px] text-slate-500 mt-0.5">All 7 brands (Sum of conversions)</p>
                     </div>
-                    <span class="text-[11px] bg-emerald-50 text-emerald-700 border border-emerald-200 px-2 py-0.5 rounded font-semibold">Regs</span>
+                    <span class="text-[11px] bg-emerald-50 text-emerald-700 border border-emerald-200 px-2 py-0.5 rounded font-semibold">Sum: 78</span>
                 </div>
-                <div class="h-56">
+                <div class="h-60">
                     <canvas id="registrationsChart"></canvas>
                 </div>
             </div>
@@ -192,13 +192,13 @@
                         All Campaigns (10)
                     </button>
                     <button onclick="filterType('SEG', this)" class="category-btn px-4 py-2 text-xs font-medium rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
-                        ESP: SEG
+                        ESP: SEG (4)
                     </button>
                     <button onclick="filterType('SEGSH', this)" class="category-btn px-4 py-2 text-xs font-medium rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
-                        ESP: SEGSH
+                        ESP: SEGSH (6)
                     </button>
                     <button onclick="filterType('WithUsers', this)" class="category-btn px-4 py-2 text-xs font-medium rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
-                        With CPA Users (>0)
+                        With CPA Users (5)
                     </button>
                 </div>
 
@@ -211,7 +211,7 @@
             </div>
         </div>
 
-        <!-- Combined Dynamic Data Table -->
+        <!-- Dynamic Data Table -->
         <div class="bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden mb-12">
             <div class="overflow-x-auto">
                 <table class="w-full text-left border-collapse" id="dataTable">
@@ -230,7 +230,7 @@
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-slate-100 text-xs font-normal" id="tableBody">
-                        <!-- Populated by JS -->
+                        <!-- Populated dynamically -->
                     </tbody>
                 </table>
             </div>
@@ -246,13 +246,13 @@
     <!-- Footer -->
     <footer class="border-t border-slate-200 bg-white py-6">
         <div class="max-w-7xl mx-auto px-4 text-center">
-            <p class="text-xs text-slate-400">Campaign Performance Overview &bull; Compiled for Andrea &bull; Email Templates Dashboard</p>
+            <p class="text-xs text-slate-400">Email Templates - Andrea: Campaign Performance Overview (%) &bull; Full Data Aggregated Dashboard</p>
         </div>
     </footer>
 
     <!-- Application Script -->
     <script>
-        // Andrea Dataset (Combined Percentage & Quantitative Performance)
+        // Exact 10 Campaigns Dataset
         const campaignsData = [
             {
                 campaign: "SEGUS0805SPINZa",
@@ -399,8 +399,39 @@
         let currentFilter = "All";
         let searchString = "";
 
-        // Format helpers
         const formatNumber = (num) => num.toLocaleString();
+
+        // Helper: Aggregate and sum data by brand for all 7 brands
+        function getAggregatedBrandData() {
+            const map = {};
+            campaignsData.forEach(c => {
+                if (!map[c.brand]) {
+                    map[c.brand] = {
+                        brand: c.brand,
+                        sent: 0,
+                        delivered: 0,
+                        opens: 0,
+                        clicks: 0,
+                        reg: 0,
+                        users: 0,
+                        campaignCount: 0
+                    };
+                }
+                map[c.brand].sent += c.sent;
+                map[c.brand].delivered += c.delivered;
+                map[c.brand].opens += c.opens;
+                map[c.brand].clicks += c.clicks;
+                map[c.brand].reg += c.reg;
+                map[c.brand].users += c.users;
+                map[c.brand].campaignCount += 1;
+            });
+
+            return Object.values(map).map(b => ({
+                ...b,
+                openRate: Number(((b.opens / b.delivered) * 100).toFixed(1)),
+                ctor: Number(((b.clicks / b.opens) * 100).toFixed(1))
+            }));
+        }
 
         // Render Table
         function renderTable() {
@@ -490,21 +521,25 @@
             renderTable();
         }
 
-        // Charts Initialization
+        // Charts Initialization (ALL 7 BRANDS INCLUDED & AGGREGATED)
         function initCharts() {
-            
-            // 1. OPEN RATE CHART (Top Campaigns)
+            const brandAggregates = getAggregatedBrandData();
+
+            // 1. OPEN RATE CHART (Sorted high to low, all 7 brands)
+            const sortedByOpen = [...brandAggregates].sort((a, b) => b.openRate - a.openRate);
             const ctxOpen = document.getElementById('openRateChart').getContext('2d');
             new Chart(ctxOpen, {
                 type: 'bar',
                 data: {
-                    labels: ['Wow Vegas', 'Bankrolla', 'MegaSpinz', 'Lavish Luck', 'Lucky Bunny'],
+                    labels: sortedByOpen.map(b => b.brand),
                     datasets: [{
                         label: 'Open Rate (%)',
-                        data: [78.3, 74.8, 3.3, 3.1, 2.2],
-                        backgroundColor: ['#f59e0b', '#fbbf24', '#fcd34d', '#fde68a', '#fef3c7'],
+                        data: sortedByOpen.map(b => b.openRate),
+                        backgroundColor: ['#f59e0b', '#fbbf24', '#fcd34d', '#fde68a', '#fef08a', '#fef9c3', '#fefce8'],
+                        borderColor: '#d97706',
+                        borderWidth: 1,
                         borderRadius: 6,
-                        barThickness: 32
+                        barThickness: 22
                     }]
                 },
                 options: {
@@ -527,24 +562,31 @@
                         },
                         x: {
                             grid: { display: false },
-                            ticks: { font: { size: 10.5, weight: '500' } }
+                            ticks: { 
+                                font: { size: 9.5, weight: '500' },
+                                maxRotation: 45,
+                                minRotation: 25
+                            }
                         }
                     }
                 }
             });
 
-            // 2. CTOR CHART (Top Click-to-Open)
+            // 2. CTOR CHART (Sorted high to low, all 7 brands)
+            const sortedByCtor = [...brandAggregates].sort((a, b) => b.ctor - a.ctor);
             const ctxCtor = document.getElementById('ctorChart').getContext('2d');
             new Chart(ctxCtor, {
                 type: 'bar',
                 data: {
-                    labels: ['JackPot Go', 'Lucky Bunny', 'SweepJungle', 'Lucky Bunny (2)', 'Lavish Luck'],
+                    labels: sortedByCtor.map(b => b.brand),
                     datasets: [{
                         label: 'CTOR (%)',
-                        data: [48.7, 47.8, 42.2, 33.9, 31.9],
-                        backgroundColor: ['#2563eb', '#3b82f6', '#60a5fa', '#93c5fd', '#bfdbfe'],
+                        data: sortedByCtor.map(b => b.ctor),
+                        backgroundColor: ['#2563eb', '#3b82f6', '#60a5fa', '#93c5fd', '#bfdbfe', '#dbeafe', '#eff6ff'],
+                        borderColor: '#1d4ed8',
+                        borderWidth: 1,
                         borderRadius: 6,
-                        barThickness: 32
+                        barThickness: 22
                     }]
                 },
                 options: {
@@ -567,24 +609,31 @@
                         },
                         x: {
                             grid: { display: false },
-                            ticks: { font: { size: 10.5, weight: '500' } }
+                            ticks: { 
+                                font: { size: 9.5, weight: '500' },
+                                maxRotation: 45,
+                                minRotation: 25
+                            }
                         }
                     }
                 }
             });
 
-            // 3. REGISTRATIONS CHART
+            // 3. REGISTRATIONS CHART (Sum of Registrations, all 7 brands)
+            const sortedByReg = [...brandAggregates].sort((a, b) => b.reg - a.reg);
             const ctxReg = document.getElementById('registrationsChart').getContext('2d');
             new Chart(ctxReg, {
                 type: 'bar',
                 data: {
-                    labels: ['Lavish (0807)', 'JackPot Go', 'Lavish (0804)', 'MegaSpinz', 'Lavish (0814)', 'Bankrolla'],
+                    labels: sortedByReg.map(b => b.brand),
                     datasets: [{
-                        label: 'Registrations',
-                        data: [18, 11, 10, 9, 8, 7],
-                        backgroundColor: ['#10b981', '#34d399', '#6ee7b7', '#a7f3d0', '#cbfbe4', '#e6fcf1'],
+                        label: 'Sum of Registrations',
+                        data: sortedByReg.map(b => b.reg),
+                        backgroundColor: ['#10b981', '#34d399', '#6ee7b7', '#a7f3d0', '#cbfbe4', '#e6fcf1', '#f0fdf4'],
+                        borderColor: '#059669',
+                        borderWidth: 1,
                         borderRadius: 6,
-                        barThickness: 30
+                        barThickness: 22
                     }]
                 },
                 options: {
@@ -594,20 +643,24 @@
                         legend: { display: false },
                         tooltip: {
                             callbacks: {
-                                label: (ctx) => ` ${ctx.parsed.y} registrations`
+                                label: (ctx) => ` Total Registrations: ${ctx.parsed.y}`
                             }
                         }
                     },
                     scales: {
                         y: {
                             beginAtZero: true,
-                            max: 20,
-                            ticks: { stepSize: 4, font: { size: 10 } },
+                            max: 40,
+                            ticks: { stepSize: 8, font: { size: 10 } },
                             grid: { color: '#f1f5f9' }
                         },
                         x: {
                             grid: { display: false },
-                            ticks: { font: { size: 10, weight: '500' } }
+                            ticks: { 
+                                font: { size: 9.5, weight: '500' },
+                                maxRotation: 45,
+                                minRotation: 25
+                            }
                         }
                     }
                 }
