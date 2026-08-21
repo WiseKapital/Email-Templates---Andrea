@@ -22,7 +22,7 @@
                         sans: ['Inter', 'sans-serif'],
                     },
                     colors: {
-                        primary: '#4F46E5',
+                        primary: '#2563EB',
                     }
                 }
             }
@@ -36,18 +36,18 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center space-x-3">
-                    <div class="w-10 h-10 rounded-xl bg-indigo-600 flex items-center justify-center text-white shadow-sm shadow-indigo-200">
+                    <div class="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center text-white shadow-sm shadow-blue-200">
                         <i class="ph ph-envelope-simple-open text-2xl"></i>
                     </div>
                     <div>
                         <h1 class="text-lg sm:text-xl font-bold text-slate-900 leading-none">Email Templates - Andrea</h1>
-                        <span class="text-xs font-semibold text-indigo-600 tracking-wide uppercase">Campaign Performance Overview (%)</span>
+                        <span class="text-xs font-semibold text-blue-600 tracking-wide uppercase">Campaign Performance Overview (%)</span>
                     </div>
                 </div>
 
                 <div class="flex items-center space-x-3">
-                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-indigo-50 text-indigo-700 border border-indigo-200">
-                        <span class="w-2 h-2 rounded-full bg-indigo-500 animate-pulse"></span> 10 Campaigns · 7 Brands
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-emerald-50 text-emerald-700 border border-emerald-200">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> 10 Campaigns · 7 Brands
                     </span>
                     <button onclick="window.print()" class="px-3.5 py-1.5 text-xs font-medium text-slate-700 bg-white hover:bg-slate-50 border border-slate-200 rounded-lg shadow-sm flex items-center gap-2 transition">
                         <i class="ph ph-printer text-base"></i> Export / Print
@@ -75,7 +75,7 @@
                     <span class="text-3xl font-extrabold text-slate-900">78.3%</span>
                     <span class="text-xs font-medium text-amber-700 bg-amber-100 px-2 py-0.5 rounded-full">Wow Vegas</span>
                 </div>
-                <p class="text-xs text-slate-500 mt-1.5 truncate"></p>
+                <p class="text-xs text-slate-500 mt-1.5 truncate">Subject: Action Required: Verify Your...</p>
             </div>
 
             <!-- Card 2: Top CTOR -->
@@ -183,22 +183,26 @@
 
         </div>
 
-        <!-- Filter & Search Controls -->
+        <!-- Filter & Search Controls (FILTROS ACTUALIZADOS) -->
         <div class="bg-white p-4 sm:p-5 rounded-2xl border border-slate-200/80 shadow-sm mb-6">
             <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-                <!-- Filter Tabs -->
-                <div class="flex flex-wrap gap-1.5 w-full md:w-auto" id="filterTabs">
-                    <button onclick="filterType('All', this)" class="category-btn active px-4 py-2 text-xs font-semibold rounded-lg bg-indigo-600 text-white shadow-sm transition">
-                        All Campaigns (10)
+                
+                <!-- Filter Tabs: More Open Rate | More Click Rate | More Registrations | More Users -->
+                <div class="flex flex-wrap gap-2 w-full md:w-auto" id="filterTabs">
+                    <button onclick="applyCategoryFilter('All', this)" class="category-btn active px-4 py-2 text-xs font-semibold rounded-lg bg-blue-600 text-white shadow-sm transition">
+                        All Records (10)
                     </button>
-                    <button onclick="filterType('SEG', this)" class="category-btn px-4 py-2 text-xs font-medium rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
-                        ESP: SEG (4)
+                    <button onclick="applyCategoryFilter('More Open Rate', this)" class="category-btn px-4 py-2 text-xs font-medium rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
+                        More Open Rate
                     </button>
-                    <button onclick="filterType('SEGSH', this)" class="category-btn px-4 py-2 text-xs font-medium rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
-                        ESP: SEGSH (6)
+                    <button onclick="applyCategoryFilter('More Click Rate', this)" class="category-btn px-4 py-2 text-xs font-medium rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
+                        More Click Rate
                     </button>
-                    <button onclick="filterType('WithUsers', this)" class="category-btn px-4 py-2 text-xs font-medium rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
-                        With CPA Users (5)
+                    <button onclick="applyCategoryFilter('More Registrations', this)" class="category-btn px-4 py-2 text-xs font-medium rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
+                        More Registrations
+                    </button>
+                    <button onclick="applyCategoryFilter('More Users', this)" class="category-btn px-4 py-2 text-xs font-medium rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
+                        More Users
                     </button>
                 </div>
 
@@ -206,7 +210,7 @@
                 <div class="relative w-full md:w-72">
                     <i class="ph ph-magnifying-glass absolute left-3 top-2.5 text-slate-400 text-base"></i>
                     <input type="text" id="searchInput" onkeyup="handleSearch()" placeholder="Search brand, code, subject..." 
-                        class="w-full pl-9 pr-4 py-2 text-xs border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent">
+                        class="w-full pl-9 pr-4 py-2 text-xs border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                 </div>
             </div>
         </div>
@@ -396,12 +400,12 @@
             }
         ];
 
-        let currentFilter = "All";
+        let currentActiveCategory = "All";
         let searchString = "";
 
         const formatNumber = (num) => num.toLocaleString();
 
-        // Helper: Aggregate and sum data by brand for all 7 brands
+        // Helper: Aggregate data by brand for all 7 brands
         function getAggregatedBrandData() {
             const map = {};
             campaignsData.forEach(c => {
@@ -413,8 +417,7 @@
                         opens: 0,
                         clicks: 0,
                         reg: 0,
-                        users: 0,
-                        campaignCount: 0
+                        users: 0
                     };
                 }
                 map[c.brand].sent += c.sent;
@@ -423,7 +426,6 @@
                 map[c.brand].clicks += c.clicks;
                 map[c.brand].reg += c.reg;
                 map[c.brand].users += c.users;
-                map[c.brand].campaignCount += 1;
             });
 
             return Object.values(map).map(b => ({
@@ -433,24 +435,30 @@
             }));
         }
 
-        // Render Table
+        // Render Table with active sorting/filtering
         function renderTable() {
             const tableBody = document.getElementById("tableBody");
             const noResults = document.getElementById("noResults");
             
-            const filtered = campaignsData.filter(c => {
-                let matchesFilter = true;
-                if (currentFilter === "SEG") matchesFilter = c.esp === "SEG";
-                else if (currentFilter === "SEGSH") matchesFilter = c.esp === "SEGSH";
-                else if (currentFilter === "WithUsers") matchesFilter = c.users > 0;
+            let dataset = [...campaignsData];
 
-                const matchesSearch = 
-                    c.brand.toLowerCase().includes(searchString.toLowerCase()) ||
+            // Apply specific Category Filter & Sorting
+            if (currentActiveCategory === "More Open Rate") {
+                dataset.sort((a, b) => b.openRate - a.openRate);
+            } else if (currentActiveCategory === "More Click Rate") {
+                dataset.sort((a, b) => b.ctor - a.ctor);
+            } else if (currentActiveCategory === "More Registrations") {
+                dataset.sort((a, b) => b.reg - a.reg);
+            } else if (currentActiveCategory === "More Users") {
+                dataset.sort((a, b) => b.users - a.users);
+            }
+
+            // Apply Text Search
+            const filtered = dataset.filter(c => {
+                return c.brand.toLowerCase().includes(searchString.toLowerCase()) ||
                     c.campaign.toLowerCase().includes(searchString.toLowerCase()) ||
                     c.subject.toLowerCase().includes(searchString.toLowerCase()) ||
                     c.esp.toLowerCase().includes(searchString.toLowerCase());
-
-                return matchesFilter && matchesSearch;
             });
 
             if (filtered.length === 0) {
@@ -462,7 +470,7 @@
             noResults.classList.add("hidden");
             tableBody.innerHTML = filtered.map(c => `
                 <tr class="hover:bg-slate-50/80 transition-colors">
-                    <td class="py-3.5 px-4 sm:px-5 font-mono text-[11px] font-medium text-indigo-600 whitespace-nowrap">
+                    <td class="py-3.5 px-4 sm:px-5 font-mono text-[11px] font-medium text-blue-600 whitespace-nowrap">
                         ${c.campaign}
                     </td>
                     <td class="py-3.5 px-4 sm:px-5 font-semibold text-slate-900 whitespace-nowrap">
@@ -506,13 +514,15 @@
             `).join("");
         }
 
-        // Filter tab switcher
-        function filterType(type, element) {
-            currentFilter = type;
+        // Switch category filter tabs
+        function applyCategoryFilter(category, element) {
+            currentActiveCategory = category;
+            
             document.querySelectorAll('.category-btn').forEach(btn => {
                 btn.className = "category-btn px-4 py-2 text-xs font-medium rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition";
             });
-            element.className = "category-btn active px-4 py-2 text-xs font-semibold rounded-lg bg-indigo-600 text-white shadow-sm transition";
+            element.className = "category-btn active px-4 py-2 text-xs font-semibold rounded-lg bg-blue-600 text-white shadow-sm transition";
+
             renderTable();
         }
 
@@ -521,7 +531,7 @@
             renderTable();
         }
 
-        // Charts Initialization (ALL 7 BRANDS INCLUDED & AGGREGATED)
+        // Charts Initialization (All 7 brands grouped)
         function initCharts() {
             const brandAggregates = getAggregatedBrandData();
 
